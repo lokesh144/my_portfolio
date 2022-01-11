@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Ubuntu:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Navbar Style */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+    /* background: crimson;  */
+    font-family: 'Ubuntu';
+    transition: all 0.7s ease;
+    
+    
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(247, 247, 149); 
+    border-bottom: 2px solid black;
+    box-shadow: 0px 10px 15px black;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: black;
+    -webkit-text-stroke: .1px white;
+    transition: all 0.7s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li a{
+    color: cyan;  
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: lightgreen;
+}
+/* Menu Button Styling */
+.menu-btn{
+    color: orange;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* Home Section Styling */
+.home{
+    display: flex;
+    background: url("images/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+    min-height: 500px;
+    color: white;
+    font-family: 'Ubuntu';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-container .txt1{
+    font-size: 27px;
+}
+.home .home-container .txt2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-container .txt3{
+    font-size: 40px;
+    margin-left: 5px 0;
+}
+.home .home-container .txt3 span{
+    color: cyan;
+    font-weight: 500;
+}
+.home .home-container a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 12px 26px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.home .home-container a:hover{
+    border: 3px solid crimson;
+    background: none;
+    color: rgb(199, 255, 96);
+}
+/* Styling About Section */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background: white;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 35%;
+}
+.about img{
+    height: 80vh;
+    width: 60vh;
+    background-position: fixed;
+    object-fit: cover;
+    -webkit-filter: drop-shadow(10px 1px 12 black)
+                  drop-shadow(-10px 0px 0 black);
+  filter: drop-shadow(10px 10px 0 black) 
+          drop-shadow(-10px 0px 0 black);
+    
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about .about-content .right span{
+    color: rgb(14, 10, 241);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(240, 13, 43);
+    border-radius: 13px;
+    margin: 15px 0;
+    padding: 10px 15px;
+    transition: all 0.1s ease;
+}
+.about .about-content .right a:hover{
+   border: 2px solid black;
+   color: red;
+   background: none;
+}
+
+/* Services Section Styling */
+.services{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+}
+/* .services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+} */
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content: "what i provide";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background: white;
+    transform: translateX(-50%);
+}
+.services img{
+    height: 30px;
+    width: 35px;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: rgb(51, 49, 49);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+}
+}
+@media (max-width: 1104px){
+    .home .max-width{
+        margin-left: 0px;
+}
+.about .about-content .left img{
+    height: 60vh;
+    width: 40vh;
+}
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";   /* Cross sign for Hamburger menu */
+    }
+    .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: black;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.4s ease;
+    }
+    .navbar .menu.active{
+      left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-container .txt2{
+        font-size: 70px;
+    }
+    .home .home-container .txt3{
+        font-size: 35px;
+    }
+    .home .home-container a{
+        font-size: 22px;
+        padding: 10px 22px;
+    }
+    .max-width{
+        max-width: 800px;
+}
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+         display: flex;
+         justify-content: center;
+         margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-container .txt2{
+        font-size: 60px;
+    }
+    .home .home-container .txt3{
+        font-size: 30px;
+    }
+    .home .home-container a{
+        font-size: 20px;
+        /* padding: 9px 25px; */
+    }
+}
+/* @media  (max-width: 500px){
+    .home .home-container .txt2{
+        font-size: 50px;
+    }
+    .home .home-container .txt3{
+        font-size: 27px;
+    }
+} */
