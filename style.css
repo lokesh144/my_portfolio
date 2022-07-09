@@ -618,7 +618,7 @@ section{
     background: none;
 }
 
-input[type=text]:focus, :focus {
+.column.right input:focus,.column.right textarea:focus {
       transition: all 0.2s ease;
     box-shadow: 0 0 9px rgba(81, 203, 238, 1);
     padding: 3px 0px 3px 3px;
