@@ -40,7 +40,7 @@
 import { projectsData } from '@/utils/data/projects-data';
 // import ProjectCard from './project-card';
 import SingleProject from './single-project';
-
+import Link from 'next/link';
 const Projects = () => {
 
   return (
@@ -70,6 +70,9 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      <div className="text-center">
+      <Link href="/rate"><button className="text-base md:text-xl my-2 md:mt-10 border-2 border-white px-4 py-2 rounded-md">Click to see my Rate 💲</button></Link>
+    </div>
     </div>
   );
 };
