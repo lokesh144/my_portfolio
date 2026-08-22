@@ -1,8 +1,14 @@
 // @flow strict
+"use client"
 import Link from "next/link";
-
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+
+if (pathname === "/story") {
+  return null;
+}
   return (
     <nav className="bg-transparent sticky top-0 z-[999] backdrop-blur-sm bg-opacity-80">
       <div className="flex items-center justify-between py-4">
