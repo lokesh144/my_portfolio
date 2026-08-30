@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 function Navbar() {
   const pathname = usePathname();
 
-if (pathname === "/story") {
+if (pathname === "/story" || pathname === "/assignment") {
   return null;
 }
   return (
